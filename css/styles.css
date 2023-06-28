@@ -1,0 +1,126 @@
+/* Custom Variables */
+
+:root {
+  --white: #FFF;
+  --faded-blue: #666ca3;
+  --dark-blue: #13183f;
+  --gray: #83869a;
+  --strong-pink: #f74780;
+  --faded-pink: #ffa7c3;
+  --gradient-orange-pink: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
+  --gradient-blue-pink: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%);
+}
+
+/* Reset */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+a, 
+p, 
+h1,
+h2, 
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  line-height: 1;
+}
+
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #FFF 0%, #F0F1FF 100%);
+  font-weight: 500;
+  color: var(--gray); 
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.625em;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+}
+
+h1,
+h3 {
+  color: var(--dark-blue);
+}
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.75em;
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 51px;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+main {
+  flex: 1;
+}
+
+.tablet,
+.desktop {
+  display: none;
+}
+
+
+/* Mobile page */
+
+header {
+}
+
+.hdr-landing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+/* Tablet page */
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+}
+
+/* Desktop page */
+
+@media (min-width: 1440px) {
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+}
