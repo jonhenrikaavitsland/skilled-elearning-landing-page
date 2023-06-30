@@ -45,7 +45,7 @@ img {
 
 p {
   font-size: 1em;
-  line-height: 1.625em;
+  line-height: 26px;
 }
 
 h1,
@@ -62,8 +62,9 @@ h3 {
 a {
   font-weight: 700;
   text-decoration: none;
-  line-height: 1.75em;
+  line-height: 28px;
   font-size: 1em;
+  color: var(--white);
 }
 
 h1 {
@@ -91,13 +92,73 @@ main {
 
 /* Mobile page */
 
-header {
-}
-
 .hdr-landing {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 48px 323px 413px;
+  margin: 16px;
+}
+
+.logo-dark {
+  margin-top: 14px;
+  z-index: 10;
+}
+
+.cta-hdr {
+  text-align: center;
+  background: var(--dark-blue);
+  padding: 14px 24px 13px 24px;
+  border-radius: 28px;
+  white-space: nowrap;
+}
+
+.cta-hdr:hover {
+  background: var(--faded-blue);
+  transition: 0.5s;
+}
+
+.cta-hdr-wrap {
+  justify-self: end;
+  align-self: center;
+  z-index: 10;
+  grid-column: 2 / -1;
+}
+
+.hero-txt {
+  grid-column: 1 / -1;
+  z-index: 10;
+}
+
+.hero-txt h1 {
+  margin: 38px 0 26px 0;
+}
+
+.hero-txt div {
+  height: 243px;
+}
+
+.spn-hero-msg {
+  white-space: nowrap;
+}
+
+.cta-hero {
+  background: var(--gradient-orange-pink);
+  padding: 17.5px 38px 17.5px 37px; 
+  margin-top: 24px;
+  border-radius: 31.5px;
+}
+
+.cta-hero:hover {
+  background: var(--faded-pink);
+  transition: 0.5s;
+}
+
+.mobile {
+  background-image: url(../images/image-hero-mobile.webp), url(../images/image-hero-mobile.png);
+  grid-column: 1 / -1;
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: left, left;
+  background-position-y: bottom, bottom;
 }
 
 /* Tablet page */
@@ -109,7 +170,11 @@ header {
 
   .tablet {
     display: block;
-  }
+  background-image: url(../images/image-hero-tablet.webp), url(../images/image-hero-tablet.png);
+  grid-column: 1 / -1;
+  grid-row: 1 / 3;
+  z-index: 0;
+}
 }
 
 /* Desktop page */
