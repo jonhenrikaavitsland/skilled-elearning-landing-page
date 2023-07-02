@@ -114,6 +114,11 @@ main {
   white-space: nowrap;
 }
 
+.cta-hdr:hover {
+  background: var(--faded-blue);
+  transition: 0.5s;
+}
+
 .hdr-3 {
   grid-column: 1 / -1;
   margin-top: 36px;
@@ -129,6 +134,11 @@ main {
   padding: 17.5px 38px 17.5px 37px;
 }
 
+.cta-hero:hover {
+  background: var(--faded-pink);
+  transition: 0.5s;
+}
+
 .hdr-3 div {
   margin-top: 24px;
 }
@@ -141,7 +151,7 @@ main {
   background-size: contain, contain;
   background-position-x: center, center;
   background-position-y: center, center;
-  padding: 180px;
+  padding: 170px;
 
 }
 
