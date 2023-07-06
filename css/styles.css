@@ -94,6 +94,7 @@ main {
 header {
   display: flex;
   padding: 16px 16px 0 16px;
+  height: 102px;
 }
 
 .hdr-left {
@@ -144,6 +145,7 @@ header {
 
   header {
     padding: 24px 40px 0 39px;
+    height: 641px;
   }
 }
 
@@ -152,5 +154,6 @@ header {
 @media (min-width: 1440px) {
   header {
     padding: 24px 165px 0 165px;
+    height: 837px;
   }
 }
