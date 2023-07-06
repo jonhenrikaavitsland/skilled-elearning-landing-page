@@ -183,10 +183,19 @@ main {
 
 .bg-wrap {
   height: 413px;
-  background-image: url(../images/image-hero-mobile.webp), url(../images/image-hero-mobile.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position-x: center, center;
-  background-position-y: center, center;
+  /* fallback */
+  background-image: url("../images/image-hero-mobile.png");
+  /* choose background image based on supported file type */
+  background-image: -webkit-image-set(url("../images/image-hero-mobile.webp"), url("../images/image-hero-mobile.png"));
+  background-image: image-set(url("../images/image-hero-mobile.webp") type("image/webp"), url("../images/image-hero-mobile.png") type("image/png"));
+  /* Choose background image based on resolution */
+  background-image: -webkit-image-set(url("../images/image-hero-mobile.webp") 1x, url("../images/image-hero-mobile@2x.webp") 2x);
+  background-image: image-set(url("../images/image-hero-mobile.webp") 1x, url("../images/image-hero-mobile@2x.webp") 2x);
+  background-image: -webkit-image-set(url("../images/image-hero-mobile.png") 1x, url("../images/image-hero-mobile@2x.png") 2x);
+  background-image: image-set(url("../images/image-hero-mobile.png") 1x, url("../images/image-hero-mobile@2x.png") 2x);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
 }
 
 /* Tablet page */
@@ -204,6 +213,19 @@ main {
   header {
     padding: 24px 40px 0 39px;
     height: 641px;
+    /* fallback */
+    background: url("../images/image-hero-tablet.png");
+    /* choose background image based on supported file type */
+    background-image: -webkit-image-set(url("../images/image-hero-tablet.webp"), url("../images/image-hero-tablet.png"));
+    background-image: image-set(url("../images/image-hero-tablet.webp") type("image/webp"), url("../images/image-hero-tablet.png") type("image/png"));
+    /* Choose background image based on resolution */
+    background-image: -webkit-image-set(url("../images/image-hero-tablet.webp") 1x, url("../images/image-hero-tablet@2x.webp") 2x);
+    background-image: image-set(url("../images/image-hero-tablet.webp") 1x, url("../images/image-hero-tablet@2x.webp") 2x);
+    background-image: -webkit-image-set(url("../images/image-hero-tablet.png") 1x, url("../images/image-hero-tablet@2x.png") 2x);
+    background-image: image-set(url("../images/image-hero-tablet.png") 1x, url("../images/image-hero-tablet@2x.png") 2x);
+    background-repeat: no-repeat;
+    background-position-x: left 48vw;
+    background-position-y: top -13vh;
   }
 
   .hdr-left {
@@ -216,12 +238,32 @@ main {
   }
 }
 
+@media (min-width: 1000px) {
+  header {
+    background-position-x: left 60vw;
+  }
+}
+
+
 /* Desktop page */
 
 @media (min-width: 1440px) {
   header {
     padding: 24px 165px 0 165px;
     height: 837px;
+    /* fallback */
+    background: url("../images/image-hero-desktop.png");
+    /* choose background image based on supported file type */
+    background-image: -webkit-image-set(url("../images/image-hero-desktop.webp"), url("../images/image-hero-desktop.png"));
+    background-image: image-set(url("../images/image-hero-desktop.webp") type("image/webp"), url("../images/image-hero-desktop.png") type("image/png"));
+    /* Choose background image based on resolution */
+    background-image: -webkit-image-set(url("../images/image-hero-desktop.webp") 1x, url("../images/image-hero-desktop@2x.webp") 2x);
+    background-image: image-set(url("../images/image-hero-desktop.webp") 1x, url("../images/image-hero-desktop@2x.webp") 2x);
+    background-image: -webkit-image-set(url("../images/image-hero-desktop.png") 1x, url("../images/image-hero-desktop@2x.png") 2x);
+    background-image: image-set(url("../images/image-hero-desktop.png") 1x, url("../images/image-hero-desktop@2x.png") 2x);
+    background-repeat: no-repeat;
+    background-position-x: left 700px;
+    background-position-y: top -120px;
   }
 
   .cta-hdr {
