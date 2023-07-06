@@ -31,6 +31,7 @@ h3 {
 body {
   margin: 0 auto;
   min-height: 100vh;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   background: linear-gradient(180deg, #FFF 0%, #F0F1FF 100%);
@@ -95,7 +96,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 48px 330px 413px;
-  margin: 16px;
+  padding: 16px;
   align-items: center;
 }
 
@@ -152,8 +153,8 @@ main {
   background-size: contain, contain;
   background-position-x: center, center;
   background-position-y: center, center;
-  padding: 170px;
-
+  padding: 1px;
+  height: 413px;
 }
 
 
@@ -167,6 +168,26 @@ main {
   .tablet {
     display: block;
 }
+
+.hdr-4 {
+  display: none;
+}
+
+.hdr-landing {
+  grid-template-rows: 48px 496px;
+}
+
+.hdr-3 {
+  grid-column: 1 / 2;
+}
+
+.hdr-landing {
+  background-image: url(../images/image-hero-tablet.webp), url(../images/image-hero-tablet.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-position-x: right -25%, right -25%;
+  background-position-y: top -20%, top -20%;
+  }
 }
 
 /* Desktop page */
