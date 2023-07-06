@@ -87,14 +87,46 @@ main {
 
 
 /* Mobile page */
-.hdr-right section {
+.hdr-left section {
   display: none;
+}
+
+header {
+  display: flex;
+  padding: 16px 16px 0 16px;
+}
+
+.hdr-left {
+  flex: 1;
+}
+
+.hdr-left div {
+  padding-top: 6px;
+}
+
+.hdr-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 11px;
+}
+
+.cta-hdr {
+  background-color: var(--dark-blue);
+  border-radius: 28px;
+  padding: 13.5px 24.1585px 13.5px 24.1568px;
+  white-space: nowrap;
+}
+
+.cta-hdr:hover {
+  background-color: var(--faded-blue);
+  transition: 0.5s;
 }
 
 /* Tablet page */
 
 @media (min-width: 768px) {
-  .hdr-right section {
+  .hdr-left section {
   display: block;
   }
 
