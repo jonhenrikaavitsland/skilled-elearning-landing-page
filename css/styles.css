@@ -98,10 +98,18 @@ header {
 
 .hdr-left {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .hdr-left div {
-  padding-top: 6px;
+  display: flex;
+  height: 48px;
+  align-items: center;
+}
+
+.hdr-left div a {
+  line-height: 0;
 }
 
 .hdr-right {
@@ -133,10 +141,16 @@ header {
   .hero-msg {
     display: none;
   }
+
+  header {
+    padding: 24px 40px 0 39px;
+  }
 }
 
 /* Desktop page */
 
 @media (min-width: 1440px) {
-
+  header {
+    padding: 24px 165px 0 165px;
+  }
 }
