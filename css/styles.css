@@ -37,7 +37,6 @@ body {
   max-width: 1440px;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(180deg, #FFF 0%, #F0F1FF 100%);
   font-weight: 500;
   color: var(--gray); 
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -231,7 +230,6 @@ header {
 .courses img {
   position: relative;
   top: -84px;
-  left: 28px;
 }
 
 .courses a {
@@ -340,9 +338,8 @@ footer :nth-child(2) {
   }
 
   .courses {
-    padding: 56px 29px 32px 28px;
-    width: 340px;
-    height: 259px;
+    padding: 56px 21px 32px 32px;
+    width: 340px;  
   }
 }
 
@@ -407,5 +404,49 @@ footer :nth-child(2) {
 
   .cta-hero {
     padding: 18.5px 37.1585px 18.5px 38.1568px;
+  }
+
+  .content-wrap {
+    padding: 0 165px 140px 165px;
+    column-gap: 30px;
+  }
+
+  .h2-wrap {
+    height: 322px;
+    width: 350px;
+    border-radius: 15px;
+    padding: 64px 32px 138px 32px;
+  }
+
+  h2 {
+    font-size: 2em;
+    line-height: 40px;
+  }
+
+  .courses {
+    padding: 64px 32px 40px 32px;
+    width: 350px;
+    height: 322px; 
+  }
+
+  .courses img {
+    top: -92px;
+  }
+
+  .courses h3,
+  .courses p,
+  .courses a {
+  position: relative;
+  top: -64px;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  .courses p {
+    padding: 24px 0;
+    font-size: 1.125em;
+    line-height: 28px;
   }
 }
